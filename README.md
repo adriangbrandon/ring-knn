@@ -22,12 +22,12 @@ Check that there is no errors.
 
 - [Wikidata IMGPedia](https://figshare.com/s/889a0fc62ab4f655b593).
 
-Now put the .dat file inside a folder.
+Now put both files inside a folder.
 
 3. Building the index. After compiling the code we should have an executable called `build-index` in `build`. Now run:
 
 ```Bash
-./build-index-similarity <absolute-path-to-the-.dat-file> <type-ring>
+./build-index-similarity <absolute-path-to-file> <type-ring>
 ```
 
 `<type-ring>` can take two values: `ring-knn` or `c-ring-knn`. Both are implementations of our ring index but using plain and compressed bitvectors, respectively.
