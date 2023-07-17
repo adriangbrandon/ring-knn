@@ -24,7 +24,7 @@ Check that there is no errors.
 
 Now put both files inside a folder.
 
-3. Building the index. After compiling the code we should have an executable called `build-index` in `build`. Now run:
+3. Building the index. After compiling the code we should have an executable called `build-index-similarity` in `build`. Now run:
 
 ```Bash
 ./build-index-similarity <absolute-path-to-file> <type-ring>
@@ -33,7 +33,7 @@ Now put both files inside a folder.
 `<type-ring>` can take two values: `ring-knn` or `c-ring-knn`. Both are implementations of our ring index but using plain and compressed bitvectors, respectively.
 This will generate the index in the folder where the `.dat` file is located. The index is suffixed with `.ring-knn` or `.c-ring-knn` according to the second argument.
 
-4. Querying the index. In `build` folder, you should find another executable file called `query-index`. To solve the queries you should run:
+4. Querying the index. In `build` folder, you should find another executable file called `query-index-similarity`. To solve the queries you should run:
 
 ```Bash
 ./query-index-similarity <absoulute-path-to-the-index-file> <absolute-path-to-the-query-file>
