@@ -20,8 +20,7 @@ Check that there is no errors.
 
 2. Download our dataset:
 
-- [Wikidata Filtered (about 80M triples)](http://compact-leapfrog.tk/files/wikidata-filtered-enumerated.dat).
-- [Wikidata (about 1000M triples)](http://compact-leapfrog.tk/files/wikidata-enumerated.dat.gz). Note that this file is compressed.
+- [Wikidata IMGPedia](https://figshare.com/s/889a0fc62ab4f655b593).
 
 Now put the .dat file inside a folder.
 
@@ -32,7 +31,7 @@ Now put the .dat file inside a folder.
 ```
 
 `<type-ring>` can take two values: `ring-knn` or `c-ring-knn`. Both are implementations of our ring index but using plain and compressed bitvectors, respectively.
-This will generate the index in the folder where the `.dat` file is located. The index is suffixed with `.ring` or `.c-ring` according to the second argument.
+This will generate the index in the folder where the `.dat` file is located. The index is suffixed with `.ring-knn` or `.c-ring-knn` according to the second argument.
 
 4. Querying the index. In `build` folder, you should find another executable file called `query-index`. To solve the queries you should run:
 
